@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="steps" duration-ms="10113" started-at="2021-05-11T03:24:10 EDT" finished-at="2021-05-11T03:24:20 EDT">
+    <groups>
+    </groups>
+    <test name="RegressionTest" duration-ms="10113" started-at="2021-05-11T03:24:10 EDT" finished-at="2021-05-11T03:24:20 EDT">
+      <class name="regression.LoginPageTestCases">
+        <test-method status="PASS" signature="userisOnHomePage()[pri:0, instance:regression.LoginPageTestCases@2a556333]" name="userisOnHomePage" is-config="true" duration-ms="3306" started-at="2021-05-11T03:24:10 EDT" finished-at="2021-05-11T03:24:13 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userisOnHomePage -->
+        <test-method status="PASS" signature="userClickOnSignIn()[pri:0, instance:regression.LoginPageTestCases@2a556333]" name="userClickOnSignIn" duration-ms="1979" started-at="2021-05-11T03:24:13 EDT" finished-at="2021-05-11T03:24:15 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userClickOnSignIn -->
+        <test-method status="PASS" signature="userEntersCredentials()[pri:0, instance:regression.LoginPageTestCases@2a556333]" name="userEntersCredentials" duration-ms="4801" started-at="2021-05-11T03:24:15 EDT" finished-at="2021-05-11T03:24:20 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userEntersCredentials -->
+      </class> <!-- regression.LoginPageTestCases -->
+    </test> <!-- RegressionTest -->
+  </suite> <!-- steps -->
+</testng-results>

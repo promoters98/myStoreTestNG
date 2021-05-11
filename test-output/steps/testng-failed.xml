@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [steps]">
+  <test thread-count="5" name="RegressionTest(failed)">
+    <classes>
+      <class name="regression.LoginPageTestCases">
+        <methods>
+          <include name="userisOnHomePage"/>
+          <include name="userClickOnSignIn"/>
+          <include name="userEntersCredentials"/>
+        </methods>
+      </class> <!-- regression.LoginPageTestCases -->
+    </classes>
+  </test> <!-- RegressionTest(failed) -->
+</suite> <!-- Failed suite [steps] -->
