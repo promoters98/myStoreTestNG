@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="regression.LoginPageTestCases">
+      <class name="regression.LoginPage">
         <methods>
-          <include name="clickOnSignInButton"/>
+          <include name="verifyHomePage"/>
+          <include name="userisOnHomePage"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- regression.LoginPageTestCases -->
+      </class> <!-- regression.LoginPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
