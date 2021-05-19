@@ -1,0 +1,3 @@
+com\regression\test\Base.class
+com\regression\test\LoginPage.class
+Utils\Data.class

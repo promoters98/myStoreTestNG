@@ -1,4 +1,4 @@
-package regression;
+package com.regression.test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

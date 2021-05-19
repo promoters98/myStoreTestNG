@@ -1,4 +1,4 @@
-package regression;
+package com.regression.test;
 
 import java.util.concurrent.TimeUnit;
 

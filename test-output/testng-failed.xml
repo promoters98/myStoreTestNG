@@ -5,9 +5,11 @@
     <classes>
       <class name="regression.LoginPage">
         <methods>
+          <include name="userSignsOut"/>
           <include name="verifyHomePage"/>
           <include name="userisOnHomePage"/>
           <include name="closeBrowser"/>
+          <include name="userEntersCredentials"/>
         </methods>
       </class> <!-- regression.LoginPage -->
     </classes>
