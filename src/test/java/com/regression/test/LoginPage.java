@@ -1,60 +1,44 @@
 package com.regression.test;
+import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import Utils.Data;
+
+public class LoginPage {
+
+private WebDriver driver;
+String appURL = "https://www.seleniumeasy.com/test/table-data-download-demo.html";
 
 
-public class LoginPage extends Base {
-	
-	Data d = new Data();
-	
-	@BeforeTest 
-	public void userisOnHomePage() {
-		chromeSetup();
-		navigateToHomePage();
-	}
-	
-	@Test (priority = 0)	
-	public void userClicksOnSignIn() throws InterruptedException {
-		WebElement SigninButton = driver.findElement(By.cssSelector(".login"));
-		SigninButton.click();
-		System.out.println("*** User has clicked sign in button. ***");
-	}
-	
-	@Test (priority = 1)
-	public void userEntersCredentials() throws InterruptedException {
-		WebElement emailField = driver.findElement(By.id("email"));
-		emailField.sendKeys(d.username);
-		WebElement passwordField = driver.findElement(By.id("passwd"));
-		passwordField.sendKeys(d.password);
-		WebElement SignIn = driver.findElement(By.id("SubmitLogin"));
-		SignIn.click();
-		System.out.println("*** User has entered credentials. ***");
-	}
-	
-	@Test (priority = 2)
-	public void verifyHomePage() {
-		String homeUrl = driver.getCurrentUrl();
-		Assert.assertEquals(homeUrl, d.myAccountUrl);
-		System.out.println("*** User has signed in successfully. ***");
-	}
-	
-	@Test (priority = 3)
-	public void userSignsOut() {
-		WebElement signOutBtn = driver.findElement(By.className("logout"));
-		signOutBtn.click();
-		String currentUrl = driver.getCurrentUrl();
-		Assert.assertEquals(currentUrl, d.logOutUrl);
-		System.out.println("*** User is on Log Out page. ***");
-	}
-	@AfterTest
-	public void closeBrowser() {
-		tearDown();
-	}
+@BeforeClass
+public void testSetUp() {
+
+driver = new ChromeDriver();
+}
+
+@Test
+public void verifyCountOfOffice() {
+driver.navigate().to(appURL);
+
+driver.findElement(By.xpath("//th[text()='Office']")).click();
+driver.findElement(By.xpath("//th[text()='Office']")).click();
+
+List<WebElement> count = driver.findElements(By.xpath("//td[@class='sorting_1'][text()='Tokyo']"));
+System.out.println("Count of Tokyo : " + count.size());
+
+}
+
+
+@AfterClass
+public void tearDown() {
+driver.quit();
+}
 
 }

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="steps" duration-ms="4731" started-at="2021-05-19T18:03:29Z" finished-at="2021-05-19T18:03:34Z">
+    <groups>
+    </groups>
+    <test name="RegressionTest" duration-ms="4731" started-at="2021-05-19T18:03:29Z" finished-at="2021-05-19T18:03:34Z">
+      <class name="com.regression.test.LoginPage">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:com.regression.test.LoginPage@4c40b76e]" name="testSetUp" is-config="true" duration-ms="1863" started-at="2021-05-19T14:03:29Z" finished-at="2021-05-19T14:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="verifyCountOfOffice()[pri:0, instance:com.regression.test.LoginPage@4c40b76e]" name="verifyCountOfOffice" duration-ms="1762" started-at="2021-05-19T14:03:31Z" finished-at="2021-05-19T14:03:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCountOfOffice -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.regression.test.LoginPage@4c40b76e]" name="tearDown" is-config="true" duration-ms="1101" started-at="2021-05-19T14:03:32Z" finished-at="2021-05-19T14:03:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.regression.test.LoginPage -->
+    </test> <!-- RegressionTest -->
+  </suite> <!-- steps -->
+</testng-results>
