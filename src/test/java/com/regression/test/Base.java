@@ -10,7 +10,7 @@ public class Base {
 public static WebDriver driver;
 	
 	public static void chromeSetup() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ghaur\\eclipse-workspace\\MyStoreTestNG\\src\\test\\resources\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:/Users/ghaur/eclipse-workspace/MyStoreTestNG/src/test/resources/Drivers/chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
